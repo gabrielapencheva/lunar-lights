@@ -1,0 +1,310 @@
+:root{
+  --bg:#000;
+  --text:#fff;
+  --muted:rgba(255,255,255,.75);
+  --muted2:rgba(255,255,255,.55);
+  --stroke:rgba(255,255,255,.18);
+  --max:1200px;
+  --radius:28px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+
+.nav{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0));
+  backdrop-filter: blur(8px);
+}
+.nav__inner{
+  max-width: var(--max);
+  margin:0 auto;
+  padding:28px 32px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.nav__brand{
+  color:var(--text);
+  text-decoration:none;
+  letter-spacing:.12em;
+  font-weight:300;
+  font-size:18px;
+}
+.nav__links{display:flex; gap:52px;}
+.nav__links a{
+  color:var(--muted);
+  text-decoration:none;
+  font-weight:300;
+  font-size:18px;
+}
+.nav__links a:hover{color:var(--text)}
+.nav__links .is-active{color:var(--text)}
+
+.nav__burger{
+  display:none;
+  background:none;
+  border:none;
+  color:var(--text);
+  font-size:28px;
+  cursor:pointer;
+}
+
+
+.menu{position:fixed; inset:0; display:none; z-index:100;}
+.menu.is-open{display:block}
+.menu__panel{
+  position:absolute; left:0; top:0;
+  height:100%;
+  width:min(78vw, 360px);
+  background:rgba(18,18,18,.98);
+  transform:translateX(-100%);
+  transition:transform .25s ease;
+  padding:28px 24px;
+  z-index:2; 
+}
+.menu.is-open .menu__panel{transform:translateX(0)}
+.menu__backdrop{
+  position:absolute; inset:0;
+  background:rgba(0,0,0,.55);
+  z-index:1;
+}
+.menu__close{
+  position:absolute; top:22px; right:18px;
+  background:none; border:none; color:var(--text);
+  font-size:22px; cursor:pointer;
+}
+.menu__top{display:flex; justify-content:flex-end; margin-bottom:80px;}
+.menu__brand{letter-spacing:.12em; font-weight:300; font-size:18px;}
+.menu__links{display:flex; flex-direction:column; gap:26px;}
+.menu__links a{
+  color:var(--muted);
+  text-decoration:none;
+  font-size:24px;
+  font-weight:200;
+}
+.menu__links a:hover{color:var(--text)}
+
+
+.page{
+  max-width: var(--max);
+  margin:0 auto;
+  padding:0 32px 60px;
+}
+
+.card{
+  border:1px solid var(--stroke);
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:#0a0a0a;
+}
+
+
+.hero{
+  position:relative;
+  margin-top:-70px; 
+}
+.hero__img{
+  width:100%;
+  height:520px;
+  object-fit:cover;
+  display:block;
+}
+.hero__fade{
+  position:absolute;
+  left:0; right:0; bottom:0;
+  height:220px;
+  background:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+
+.top{padding-top:34px;}
+.title{
+  margin:0;
+  font-weight:300;
+  letter-spacing:.02em;
+  line-height:1.05;
+  font-size:64px; 
+}
+
+.meta{
+  margin-top:22px;
+  display:flex;
+  align-items:flex-start;
+  gap:54px;
+}
+.meta__num{
+  font-size:32px;  
+  font-weight:300;
+  line-height:1.1;
+}
+.meta__label{
+  margin-top:8px;
+  font-size:16px;
+  color:var(--muted2);
+  font-weight:200;
+}
+
+.theme{
+  margin-top:10px;
+  display:grid;
+  grid-template-columns: 1fr 520px;
+  gap:40px;
+  align-items:start;
+}
+.theme__name{
+  grid-column:2 / 3;
+  font-size:20px;
+  letter-spacing:.08em;
+  font-weight:300;
+  color:var(--text);
+}
+.theme__desc{
+  grid-column:2 / 3;
+  margin:10px 0 0;
+  font-size:18px;
+  font-weight:200;
+  color:var(--muted2);
+  line-height:1.35;
+}
+
+
+.gallery{margin-top:34px;}
+.gallery__track{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:28px;
+}
+.shot{
+  border:1px solid var(--stroke);
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:#0a0a0a;
+}
+.shot img{
+  width:100%;
+  height:360px;
+  object-fit:cover;
+  display:block;
+}
+
+
+.details{
+  margin-top:56px;
+  display:grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap:40px;
+  align-items:start;
+}
+.h2{
+  margin:0 0 16px;
+  font-size:56px;
+  font-weight:300;
+  line-height:1;
+}
+.body{
+  margin:0;
+  font-size:24px;
+  font-weight:200;
+  line-height:1.25;
+  color:var(--muted2);
+}
+.details__map img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+
+.more{
+  margin-top:56px;
+  display:grid;
+  grid-template-columns: 420px 1fr;
+  gap:36px;
+  align-items:center;
+}
+.more__img img{width:100%; height:auto; display:block;}
+
+
+.footer{
+  max-width: var(--max);
+  margin:0 auto;
+  padding:0 32px 34px;
+}
+.footer__line{height:1px; background:rgba(255,255,255,.25); margin:26px 0;}
+.footer__inner{display:flex; justify-content:space-between; gap:40px;}
+.footer__col{display:flex; flex-direction:column; gap:10px; color:var(--muted2); font-weight:200;}
+.footer__col a{color:var(--muted2); text-decoration:none; font-size:16px;}
+.footer__col a:hover{color:var(--text)}
+.footer__title{margin:0 0 4px; font-size:16px; color:var(--muted2)}
+.footer__mark{
+  font-size:120px;
+  letter-spacing:.12em;
+  opacity:.08;
+  line-height:1;
+  user-select:none;
+}
+
+
+@media (max-width: 980px){
+  .title{font-size:54px}
+  .h2{font-size:54px}
+  .body{font-size:26px}
+  .details{grid-template-columns: 1fr}
+  .theme{grid-template-columns: 1fr}
+  .theme__name, .theme__desc{grid-column:auto}
+  .gallery__track{grid-template-columns: 1fr; }
+  .shot img{height:420px}
+  .more{grid-template-columns: 1fr}
+}
+
+@media (max-width: 720px){
+  .nav__inner{
+    padding:26px 20px;
+    justify-content:center;
+    position:relative;
+  }
+  .nav__burger{
+    display:block;
+    position:absolute;
+    left:18px;
+  }
+  .nav__links{display:none}
+
+  .page{padding:0 20px 50px}
+
+  .hero__img{height:300px}
+
+  .title{font-size:44px}
+  .meta{gap:26px}
+  .meta__num{font-size:28px}
+
+  
+  .gallery__track{
+    display:flex;
+    gap:16px;
+    overflow-x:auto;
+    padding-bottom:6px;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .shot{
+    min-width: 70%;
+    scroll-snap-align:start;
+  }
+  .shot img{height:320px}
+
+  .h2{font-size:44px}
+  .body{font-size:20px; line-height:1.35}
+
+  .footer{padding:0 20px 28px}
+  .footer__mark{font-size:92px}
+}

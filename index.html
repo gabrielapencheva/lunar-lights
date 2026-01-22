@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUNAR — Sea of Lights</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  
+  <header class="nav">
+    <div class="nav__inner">
+      <button class="nav__burger" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+        ☰
+      </button>
+
+      <a class="nav__brand" href="index.html">LUNAR</a>
+
+      <nav class="nav__links" aria-label="Main">
+        <a href="map.html">map</a>
+        <a href="projects.html">projects</a>
+        <a href="about.html">about</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <div class="menu" id="mobileMenu" aria-hidden="true">
+    <div class="menu__panel">
+      <button class="menu__close" aria-label="Close menu">✕</button>
+
+      <div class="menu__top">
+        <span class="menu__brand"></span>
+      </div>
+
+      <nav class="menu__links" aria-label="Mobile">
+        <a href="index.html">home</a>
+        <a href="map.html">map</a>
+        <a href="projects.html">projects</a>
+        <a href="about.html">about</a>
+      </nav>
+    </div>
+
+    <div class="menu__backdrop" tabindex="-1"></div>
+  </div>
+
+  <main>
+    
+   <section class="hero">
+  <picture>
+    
+    <source srcset="images/hero-mobile.png" media="(max-width: 720px)">
+  
+    <img class="hero__img" src="images/hero.png" alt="LUNAR Sea of Lights">
+  </picture>
+  <div class="hero-overlay"></div>
+</section>
+
+
+   
+    <section class="sponsors container">
+      <p>Bulgaria Ministry of Tourism</p>
+      <p>Brita</p>
+      <p>Black sea Gold Pomorie</p>
+      <p>30 Uaratech</p>
+      <p>Grand Resort Pavel Banq</p>
+    </section>
+
+    
+    <section class="about-block container">
+      <div class="stats">
+        <div class="stat">
+          <h3>3</h3>
+          <p>Years</p>
+        </div>
+        <div class="stat">
+          <h3>13</h3>
+          <p>Locations</p>
+        </div>
+        <div class="stat">
+          <h3>600&nbsp;000+</h3>
+          <p>People in the<br>streets of Sofia</p>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <h2>ABOUT</h2>
+        <p>
+          Lunar Lights reveals the hidden beauty of Sofia through light, art,
+          and digital installations, turning familiar city spaces into magical
+          nighttime experiences.
+        </p>
+      </div>
+    </section>
+
+    
+    <section class="projects-preview container">
+      <div class="project-grid">
+        <div class="project-left">
+          <a class="card tall" href="projects.html" aria-label="See projects">
+            <img src="images/project1ndksin.png" alt="Lunar Lights projection 1">
+          </a>
+
+          <a class="btn-see-more" href="projects.html">See more</a>
+        </div>
+
+        <div class="project-right">
+          <a class="card wide" href="projects.html" aria-label="Lunar Lights projection 2">
+            <img src="images/project2dulga.png" alt="Lunar Lights projection 2">
+          </a>
+
+          <a class="card wide" href="projects.html" aria-label="Lunar Lights projection 3">
+            <img src="images/project3dulga.png" alt="Lunar Lights projection 3">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="expect container">
+      <div class="expect-text">
+        <h2>WHAT TO<br>EXPECT</h2>
+        <p>
+          LUNAR Lights Festival invites you to explore the hidden beauty of Sofia after
+          dark. As night falls, familiar buildings transform into glowing artworks,
+          revealing stories, emotions, and creativity usually unseen. Wander through the
+          city and discover how light uncovers hidden perspectives, connects people, and
+          turns the urban space into an open-air gallery.
+        </p>
+      </div>
+
+      <div class="expect-media card">
+        <img src="images/map.png" alt="Map preview">
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="footer">
+    <div class="footer-inner container">
+      <div class="footer-col">
+        <p class="footer-title">Follow us on</p>
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+      </div>
+
+      <div class="footer-col">
+        <a href="#">Privacy</a>
+        <a href="#">Cookie policy</a>
+        <a href="#">Privacy policy</a>
+      </div>
+
+      <div class="footer-mark">LUNAR</div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

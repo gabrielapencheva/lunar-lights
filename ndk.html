@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUNAR — National Palace of Culture</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="ndk.css" />
+</head>
+
+<body>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <button class="nav__burger" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">☰</button>
+
+      <a class="nav__brand" href="index.html">LUNAR</a>
+
+      <nav class="nav__links" aria-label="Main">
+        <a href="map.html">map</a>
+        <a href="projects.html">projects</a>
+        <a class="is-active" href="ndk.html">about</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <div class="menu" id="mobileMenu" aria-hidden="true">
+    <div class="menu__panel">
+      <button class="menu__close" aria-label="Close menu">✕</button>
+
+      <div class="menu__top">
+        <span class="menu__brand">LUNAR</span>
+      </div>
+
+      <nav class="menu__links" aria-label="Mobile">
+        <a href="index.html">home</a>
+        <a href="map.html">map</a>
+        <a href="projects.html">projects</a>
+        <a href="about.html">about</a>
+      </nav>
+    </div>
+
+    <div class="menu__backdrop" tabindex="-1"></div>
+  </div>
+
+  <main class="page">
+   
+    <section class="hero">
+      
+      <img class="hero__img" src="images/ndk.png" alt="National Palace of Culture projection" />
+      <div class="hero__fade"></div>
+    </section>
+
+    
+    <section class="top">
+      <h1 class="title">NATIONAL PALACE<br>OF CULTURE</h1>
+
+      <div class="meta">
+        <div class="meta__item">
+          <div class="meta__num">3</div>
+          <div class="meta__label">Artists</div>
+        </div>
+        <div class="meta__item">
+          <div class="meta__num">13</div>
+          <div class="meta__label">On the map</div>
+        </div>
+        <div class="meta__item">
+          <div class="meta__num">06-10 DEC</div>
+          <div class="meta__label">You can visit</div>
+        </div>
+      </div>
+
+      <div class="theme">
+        <div class="theme__name">GLOWING HEARTS</div>
+        <p class="theme__desc">
+          Symbol of love and connection. Through light and color, this theme celebrates human feelings
+          and reminds us of the power of love to bring people together and light up the city.
+        </p>
+      </div>
+    </section>
+
+    
+    <section class="gallery" aria-label="Project images">
+      <div class="gallery__track">
+        <article class="shot">
+          <img src="images/ndk1.png" alt="NPK projection photo 1" />
+        </article>
+        <article class="shot">
+          <img src="images/ndk2.png" alt="NPK projection photo 2" />
+        </article>
+        <article class="shot">
+          <img src="images/ndk3.png" alt="NPK projection photo 3" />
+        </article>
+      </div>
+    </section>
+
+    
+    <section class="details">
+      <div class="details__text">
+        <h2 class="h2">THEME<br>DESCRIPTION</h2>
+        <p class="body">
+          The largest facade in the event, the National Palace of Culture, will be transformed through the symbol
+          of love with the installation “Glowing Heart”. It will showcase works by three winning artists, selected
+          through an open competition, interpreting the themes eMotions, eXplore, and eFuture.
+        </p>
+      </div>
+
+      <div class="details__map card">
+        <img src="images/map.png" alt="Map preview" />
+      </div>
+    </section>
+
+    
+    <section class="more">
+      <div class="more__img card">
+        <img src="images/morendk.png" alt="More about LUNAR" />
+      </div>
+      <div class="more__text">
+        <h2 class="h2">MORE</h2>
+        <p class="body">
+          Discover the hidden stories of Sofia through light, art, and immersive installations that transform the city after dark.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="footer">
+    <div class="footer__line"></div>
+
+    <div class="footer__inner">
+      <div class="footer__col">
+        <p class="footer__title">Follow us on</p>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+
+      <div class="footer__col">
+        <a href="#">Privacy</a>
+        <a href="#">Cookie policy</a>
+        <a href="#">Privacy policy</a>
+      </div>
+
+      <div class="footer__mark">LUNAR</div>
+    </div>
+  </footer>
+
+  <script src="ndk.js"></script>
+</body>
+</html>

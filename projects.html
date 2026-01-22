@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUNAR – Projects</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="projects.css" />
+
+</head>
+
+<body>
+  
+  <header class="nav">
+    <div class="nav__inner">
+      
+      <button class="nav__burger" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+        ☰
+      </button>
+
+      <a class="nav__brand" href="index.html">LUNAR</a>
+
+      
+      <nav class="nav__links" aria-label="Main">
+        <a href="map.html">map</a>
+        <a class="is-active" href="projects.html">projects</a>
+        <a href="about.html">about</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <div class="menu" id="mobileMenu" aria-hidden="true">
+    <div class="menu__panel">
+      <button class="menu__close" aria-label="Close menu">✕</button>
+
+      <div class="menu__top">
+        <span class="menu__brand"></span>
+      </div>
+
+      <nav class="menu__links" aria-label="Mobile">
+        <a href="index.html">home</a>
+        <a href="map.html">map</a>
+        <a href="projects.html">projects</a>
+        <a href="about.html">about</a>
+      </nav>
+    </div>
+
+    
+    <div class="menu__backdrop" tabindex="-1"></div>
+  </div>
+
+  
+  <main class="page">
+    <section class="hero">
+      <h1 class="hero__title">OUR<br>PROJECTS</h1>
+
+      <div class="sponsors" aria-label="Sponsors">
+        <span>Bulgaria Ministry of Tourism</span>
+        <span>Brita</span>
+        <span>Black sea Gold Pomorie</span>
+        <span>30 Uaratech</span>
+        <span>Grand Resort Pavel Banq</span>
+      </div>
+    </section>
+
+    <section class="grid" aria-label="Project cards">
+      
+      <a class="card" href="theatre.html">
+        <img src="images/theatre.png" alt="National Theatre" />
+        <div class="card__label">NATIONAL<br>THEATRE</div>
+      </a>
+
+      
+      <a class="card" href="museum.html">
+        <img src="images/historymuseum.png" alt="History Museum" />
+        <div class="card__label">HISTORY<br>MUSEUM</div>
+      </a>
+
+      
+      <a class="card" href="ndk.html">
+        <img src="images/ndk.png" alt="National Palace of Culture" />
+        <div class="card__label">NATIONAL<br>PALACE OF<br>CULTURE</div>
+      </a>
+
+      
+      <a class="card" href="#" aria-label="Hyatt Residency (coming soon)">
+        <img src="images/hayatt.png" alt="Hyatt Residency" />
+        <div class="card__label">HYATT<br>RESIDENCY</div>
+      </a>
+
+      
+      <a class="card" href="#" aria-label="Slaveykov Square (coming soon)">
+        <img src="images/slaveykov.png" alt="Slaveykov Square" />
+        <div class="card__label">SLAVEYKOV<br>SQUARE</div>
+      </a>
+
+      
+      <a class="card" href="#" aria-label="National Library (coming soon)">
+        <img src="images/library.png" alt="National Library" />
+        <div class="card__label">NATIONAL<br>LIBRARY</div>
+      </a>
+    </section>
+  </main>
+
+  
+  <footer class="footer">
+    <div class="footer__line"></div>
+
+    <div class="footer__inner">
+      <div class="footer__col">
+        <p class="footer__title">Follow us on</p>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+
+      <div class="footer__col">
+        <a href="#">Privacy</a>
+        <a href="#">Cookie policy</a>
+        <a href="#">Privacy policy</a>
+      </div>
+
+      <div class="footer__mark">LUNAR</div>
+    </div>
+  </footer>
+
+  <script src="projects.js" defer></script>
+</body>
+</html>
