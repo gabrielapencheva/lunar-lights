@@ -1,0 +1,185 @@
+
+
+.aboutPage{
+  max-width: var(--max);
+  margin:0 auto;
+  padding:48px 32px 24px;
+}
+
+
+.aboutBack{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:42px;
+  height:42px;
+  border-radius:999px;
+  color:var(--text);
+  text-decoration:none;
+  opacity:.9;
+}
+.aboutBack:hover{opacity:1}
+
+
+.aboutTitle{
+  margin: 10px 0 44px;
+  font-size: 44px;
+  font-weight: 200;
+  line-height: 1.1;
+  letter-spacing: .01em;
+  max-width: 980px;
+}
+.aboutTitle__mark{
+  letter-spacing: .12em;
+  font-weight: 300;
+}
+
+
+.acc{
+  border-top: 1px solid rgba(255,255,255,.25);
+}
+
+
+.accItem{
+  border-bottom: 1px solid rgba(255,255,255,.25);
+}
+
+
+.accBtn{
+  width:100%;
+  background:transparent;
+  border:0;
+  padding:28px 0;
+  cursor:pointer;
+  color:var(--text);
+  text-align:left;
+
+  display:grid;
+  grid-template-columns: 190px 1fr;
+  align-items:center;
+  gap:18px;
+}
+
+
+.accNum{
+  font-size:118px;
+  font-weight:200;
+  line-height:1;
+  letter-spacing:.02em;
+  opacity:.95;
+}
+
+
+.accName{
+  font-size:22px;
+  font-weight:300;
+  letter-spacing:.14em;
+}
+
+
+.accPanel{
+  max-height:0px;
+  overflow:hidden;
+  transition:max-height .28s ease;
+}
+
+.accPanel__inner{
+  padding: 0 0 26px;
+  margin-left: 208px;     
+  max-width: 620px;
+
+  font-size:13px;
+  line-height:1.55;
+  font-weight:200;
+  color:var(--muted2);
+}
+
+
+.moreCard{
+  display:flex;
+  align-items:center;
+  gap:22px;
+  text-decoration:none;
+  padding:28px 0 10px;
+}
+
+.moreCard__thumb{
+  width:210px;
+  height:120px;
+  border-radius:20px;
+  border:1px solid var(--stroke);
+  overflow:hidden;
+  box-shadow:0 12px 30px rgba(0,0,0,.45);
+}
+
+.moreCard__thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.moreCard__text{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.moreCard__title{
+  color:var(--text);
+  letter-spacing:.14em;
+  font-weight:300;
+  font-size:22px;
+}
+
+.moreCard__sub{
+  max-width:320px;
+  font-size:13px;
+  line-height:1.55;
+  font-weight:200;
+  color:var(--muted2);
+}
+
+.moreCard:hover .moreCard__thumb{
+  border-color: rgba(255,255,255,.28);
+}
+
+
+
+@media (max-width: 980px){
+  .aboutTitle{ font-size:40px; }
+  .accBtn{ grid-template-columns:160px 1fr; }
+  .accNum{ font-size:100px; }
+  .accPanel__inner{ margin-left:178px; }
+}
+
+@media (max-width: 720px){
+  .aboutPage{ padding:34px 20px 20px; }
+  .aboutTitle{ font-size:34px; margin-bottom:34px; }
+
+  .accBtn{
+    grid-template-columns:120px 1fr;
+    padding:22px 0;
+  }
+  .accNum{ font-size:84px; }
+  .accName{ font-size:18px; letter-spacing:.12em; }
+
+  .accPanel__inner{
+    margin-left:0;
+    padding:0 0 20px;
+    max-width:560px;
+  }
+
+  .moreCard{ gap:16px; padding-top:22px; }
+  .moreCard__thumb{
+    width:160px;
+    height:96px;
+    border-radius:18px;
+  }
+}
+
+@media (max-width: 420px){
+  .aboutTitle{ font-size:30px; }
+  .accBtn{ grid-template-columns:96px 1fr; }
+  .accNum{ font-size:72px; }
+}
